@@ -3,129 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Builders | Premier Construction & Renovation</title>
-    <!-- Tailwind CSS CDN -->
+    <title>SA Builders Guild | Precision Construction & Infrastructure</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .relatable-img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .relatable-img:hover {
+            transform: scale(1.03);
+        }
+        /* Mobile-friendly navigation fix */
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans sticky-footer">
 
-    <!-- Header / Navigation -->
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-black text-amber-500 tracking-wider">
-                APEX<span class="text-slate-800">BUILDERS</span>
+            <a href="#" class="text-2xl font-black text-amber-500 tracking-wider flex items-center gap-2">
+                <i class="fa-solid fa-hard-hat text-amber-500"></i>
+                <span>SA<span class="text-slate-800">BUILDERSGUILD</span></span>
             </a>
             <nav class="hidden md:flex space-x-8 font-semibold text-slate-600">
                 <a href="#home" class="hover:text-amber-500 transition">Home</a>
                 <a href="#services" class="hover:text-amber-500 transition">Services</a>
-                <a href="#about" class="hover:text-amber-500 transition">About</a>
                 <a href="#portfolio" class="hover:text-amber-500 transition">Projects</a>
-                <a href="#contact" class="hover:text-amber-500 transition">Contact</a>
+                <a href="#about" class="hover:text-amber-500 transition">About Us</a>
+                <a href="#contact" class="hover:text-amber-500 transition">Get Quote</a>
             </nav>
-            <a href="#contact" class="hidden md:block bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-6 rounded transition shadow-lg">
-                Get a Quote
-            </a>
+            <div class="flex items-center gap-2">
+                <div class="text-xs text-green-700 bg-green-50 px-2 py-1 rounded font-bold border border-green-200 hidden lg:block">
+                    SA Quality Assured
+                </div>
+                <a href="#contact" class="hidden md:block bg-slate-900 hover:bg-slate-700 text-white font-bold py-2 px-6 rounded transition shadow-lg">
+                    Contact Our Estimators
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="pt-24 min-h-screen flex items-center bg-slate-900 text-white relative overflow-hidden">
-        <!-- Background Overlay Image (Placeholder) -->
-        <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1920');"></div>
+    <section id="home" class="pt-24 min-h-[90vh] flex items-center bg-slate-950 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-40 bg-cover bg-center" style="background-image: url('https://image.api.playground.ai/art-5777a8b5-b7ed-48d6-bd0e-5a507850550f.webp');"></div>
         
         <div class="container mx-auto px-6 relative z-10 py-12">
             <div class="max-w-3xl">
-                <span class="text-amber-500 font-bold tracking-widest uppercase block mb-3">Solid Foundations, Noble Structures</span>
+                <span class="text-amber-500 font-bold tracking-widest uppercase block mb-3">South Africa's Premier Construction Guild</span>
                 <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
-                    We Turn Engineering Blueprints Into Reality
+                    Building the Future of Our Nation
                 </h1>
-                <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl">
-                    From commercial skyscrapers to custom residential homes, Apex Builders delivers unmatched craftsmanship, safety, and integrity on every square foot.
+                <p class="text-lg md:text-xl text-slate-200 mb-8 max-w-2xl">
+                    From complex urban high-rises to bespoke coastal homes, SA Builders Guild delivers engineering integrity, safety compliance, and proud craftsmanship. We are dedicated to structural excellence and local job creation.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#portfolio" class="bg-amber-500 hover:bg-amber-600 text-slate-900 text-center font-bold py-3 px-8 rounded text-lg transition shadow-lg">
-                        View Our Work
+                        View Local Projects
                     </a>
                     <a href="#contact" class="border-2 border-white hover:bg-white hover:text-slate-900 text-center text-white font-bold py-3 px-8 rounded text-lg transition">
-                        Consultation
+                        Project Consultation
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Core Expertise</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Local Expertise, Global Standards</h2>
                 <div class="w-16 h-1 bg-amber-500 mx-auto mb-4"></div>
-                <p class="text-gray-600">Comprehensive construction services tailored to meet the specific requirements of every unique project layout.</p>
+                <p class="text-gray-600">Tailored construction solutions designed to thrive in South Africa’s unique terrain and regulatory environment.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
                     <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-lg flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-city"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-800 mb-3">Commercial Build</h3>
-                    <p class="text-gray-600 mb-4">State-of-the-art office buildings, retail spaces, and warehouses built efficiently to corporate standards.</p>
+                    <p class="text-gray-600 mb-4">Office parks, urban development, and retail infrastructure engineered to stimulate the economy.</p>
                 </div>
 
-                <!-- Service 2 -->
                 <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
                     <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-lg flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-house-chimney"></i>
                     </div>
                     <h3 class="text-xl font-bold text-slate-800 mb-3">Residential Homes</h3>
-                    <p class="text-gray-600 mb-4">Custom architectural builds and luxury smart homes engineered around your personal lifestyle.</p>
+                    <p class="text-gray-600 mb-4">Luxury coastal properties and custom suburban family homes built to withstand our climate.</p>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
                     <div class="w-14 h-14 bg-amber-100 text-amber-500 rounded-lg flex items-center justify-center text-2xl mb-6">
                         <i class="fa-solid fa-trowel-bricks"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-3">Renovations & Retrofits</h3>
-                    <p class="text-gray-600 mb-4">Upgrading structures with modern, sustainable solutions, internal remodeling, and layout redesigns.</p>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Civil Infrastructure</h3>
+                    <p class="text-gray-600 mb-4">Paving, drainage, industrial retrofitting, and essential utility structural support.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Local Landmarks Delivered</h2>
+                <div class="w-16 h-1 bg-amber-500 mx-auto mb-4"></div>
+                <p class="text-gray-600">A look at some of the key structures defining modern South African life.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group overflow-hidden rounded-xl shadow-lg bg-slate-900 border border-slate-200">
+                    <img src="https://image.api.playground.ai/art-e5d038f4-2794-4b5c-a5b5-4b07f9c96f9a.webp" alt="High Rise Construction Sandton Johannesburg" class="w-full h-80 object-cover opacity-90 transition duration-300 group-hover:opacity-60 relatable-img">
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-8 group-hover:translate-y-0 transition duration-300 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                        <h4 class="text-xl font-bold text-white mb-1">Sandton Financial Hub</h4>
+                        <p class="text-amber-400 text-sm">Commercial • Johannesburg</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl shadow-lg bg-slate-900 border border-slate-200">
+                    <img src="https://image.api.playground.ai/art-e9063548-261f-4b0d-bf06-03f9b2d8d87b.webp" alt="Modern Coastal Home near Cape Town" class="w-full h-80 object-cover opacity-90 transition duration-300 group-hover:opacity-60 relatable-img">
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-8 group-hover:translate-y-0 transition duration-300 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                        <h4 class="text-xl font-bold text-white mb-1">Camps Bay Residence</h4>
+                        <p class="text-amber-400 text-sm">Residential • Cape Town</p>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-xl shadow-lg bg-slate-900 border border-slate-200">
+                    <img src="https://image.api.playground.ai/art-5e47854f-1262-4b2a-8951-4e76a666e409.webp" alt="SA Infrastructure Project with native vegetation" class="w-full h-80 object-cover opacity-90 transition duration-300 group-hover:opacity-60 relatable-img">
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-8 group-hover:translate-y-0 transition duration-300 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent">
+                        <h4 class="text-xl font-bold text-white mb-1">Durban Eco-Park Ext.</h4>
+                        <p class="text-amber-400 text-sm">Infrastructure • KwaZulu-Natal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gray-100">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="w-full lg:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800" alt="Construction Site" class="rounded-lg shadow-xl object-cover w-full h-[450px]">
+                    <img src="https://image.api.playground.ai/art-30e7ca12-2580-482d-8b0c-99b828771424.webp" alt="SA Builders Guild Construction Site Crew" class="rounded-2xl shadow-2xl object-cover w-full h-[500px]">
                 </div>
                 <div class="w-full lg:w-1/2">
-                    <span class="text-amber-500 font-bold uppercase tracking-wider block mb-2">Who We Are</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Building with Precision & Pride Since 2012</h2>
-                    <p class="text-gray-600 mb-6">
-                        For over a decade, Apex Builders has set the standard for high-end construction management. We operate on a foundation of strict safety compliance, structural longevity, and transparent communication.
+                    <span class="text-amber-500 font-bold uppercase tracking-wider block mb-2">Our Foundation</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Precision Engineering, Rooted in South Africa</h2>
+                    <p class="text-gray-700 mb-6">
+                        With over 15 years of operational excellence across Gauteng, the Western Cape, and KZN, SA Builders Guild has earned a reputation for reliability. We do not just build structures; we invest in local supply chains, strictly adhere to SABS standards, and manage every site with obsessive attention to safety (OHSAS).
                     </p>
                     
-                    <div class="grid grid-cols-2 gap-6 mb-8">
+                    <div class="grid grid-cols-2 gap-6 mb-8 text-slate-700">
                         <div class="flex items-center space-x-3">
-                            <i class="fa-solid fa-circle-check text-amber-500 text-xl"></i>
-                            <span class="font-semibold text-slate-800">Licensed & Insured</span>
+                            <i class="fa-solid fa-certificate text-amber-500 text-xl"></i>
+                            <span class="font-semibold">Fully Licensed & Insured</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <i class="fa-solid fa-circle-check text-amber-500 text-xl"></i>
-                            <span class="font-semibold text-slate-800">Sustainable Materials</span>
+                            <i class="fa-solid fa-leaf text-amber-500 text-xl"></i>
+                            <span class="font-semibold">Local & Eco Sourcing</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <i class="fa-solid fa-circle-check text-amber-500 text-xl"></i>
-                            <span class="font-semibold text-slate-800">On-Time Delivery</span>
+                            <i class="fa-solid fa-people-group text-amber-500 text-xl"></i>
+                            <span class="font-semibold">SA Crew & Job Creation</span>
                         </div>
                         <div class="flex items-center space-x-3">
-                            <i class="fa-solid fa-circle-check text-amber-500 text-xl"></i>
-                            <span class="font-semibold text-slate-800">Expert Crew</span>
+                            <i class="fa-solid fa-business-time text-amber-500 text-xl"></i>
+                            <span class="font-semibold">Fixed Timeline Delivery</span>
                         </div>
                     </div>
                 </div>
@@ -133,67 +177,27 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Recent Projects</h2>
-                <div class="w-16 h-1 bg-amber-500 mx-auto mb-4"></div>
-                <p class="text-gray-600">A glance at the landmarks and customized living spaces we have proudly delivered.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project 1 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600" alt="Project 1" class="w-full h-72 object-cover opacity-90 group-hover:opacity-50 transition duration-300">
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-8 group-hover:translate-y-0 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-1">The Vertex Tower</h4>
-                        <p class="text-amber-400 text-sm">Commercial HQ • 2025</p>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600" alt="Project 2" class="w-full h-72 object-cover opacity-90 group-hover:opacity-50 transition duration-300">
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-8 group-hover:translate-y-0 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-1">Modernist Eco-Villa</h4>
-                        <p class="text-amber-400 text-sm">Residential • 2024</p>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=600" alt="Project 3" class="w-full h-72 object-cover opacity-90 group-hover:opacity-50 transition duration-300">
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end transform translate-y-8 group-hover:translate-y-0 transition duration-300">
-                        <h4 class="text-xl font-bold text-white mb-1">Oakridge Industrial Park</h4>
-                        <p class="text-amber-400 text-sm">Infrastructure • 2025</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Form Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto bg-slate-900 rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+            <div class="max-w-4xl mx-auto bg-slate-950 rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
                 
-                <!-- Contact info card -->
-                <div class="p-8 md:p-12 bg-slate-800 text-white w-full md:w-2/5 flex flex-col justify-between">
+                <div class="p-8 md:p-12 bg-slate-900 text-white w-full md:w-2/5 flex flex-col justify-between">
                     <div>
-                        <h3 class="text-2xl font-bold mb-4">Start Your Project</h3>
-                        <p class="text-slate-300 text-sm mb-8">Ready to break ground? Get in touch with our estimators to secure a comprehensive quote.</p>
+                        <h3 class="text-2xl font-bold mb-4">Start Your Build</h3>
+                        <p class="text-slate-300 text-sm mb-8">Connect with our estimators for a transparent, comprehensive consultation and professional quote.</p>
                         
                         <div class="space-y-4">
                             <div class="flex items-center space-x-3">
                                 <i class="fa-solid fa-phone text-amber-500"></i>
-                                <span class="text-sm text-slate-200">+1 (555) 019-2831</span>
+                                <span class="text-sm text-slate-200">+27 11 555 1234 (HQ)</span>
                             </div>
                             <div class="flex items-center space-x-3">
                                 <i class="fa-solid fa-envelope text-amber-500"></i>
-                                <span class="text-sm text-slate-200">build@apexbuilders.com</span>
+                                <span class="text-sm text-slate-200">quote@sabuilders.co.za</span>
                             </div>
                             <div class="flex items-center space-x-3">
                                 <i class="fa-solid fa-location-dot text-amber-500"></i>
-                                <span class="text-sm text-slate-200">104 Industrial Pkwy, Suite B</span>
+                                <span class="text-sm text-slate-200">12 Sandton Dr, Johannesburg</span>
                             </div>
                         </div>
                     </div>
@@ -205,29 +209,36 @@
                     </div>
                 </div>
 
-                <!-- Contact Form element -->
-                <div class="p-8 md:p-12 w-full md:w-3/5 bg-slate-900">
-                    <form class="space-y-4">
+                <div class="p-8 md:p-12 w-full md:w-3/5 bg-slate-950">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        
+                        <input type="hidden" name="subject" value="New SA Build Quote Request - Apex Builders">
+
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                         <div>
                             <label class="block text-slate-300 text-sm font-semibold mb-1">Full Name</label>
-                            <input type="text" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-white focus:outline-none focus:border-amber-500" required>
+                            <input type="text" name="name" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-white focus:outline-none focus:border-amber-500" required>
                         </div>
                         <div>
                             <label class="block text-slate-300 text-sm font-semibold mb-1">Email Address</label>
-                            <input type="email" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-white focus:outline-none focus:border-amber-500" required>
+                            <input type="email" name="email" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-white focus:outline-none focus:border-amber-500" required>
                         </div>
                         <div>
-                            <label class="block text-slate-300 text-sm font-semibold mb-1">Project Type</label>
-                            <select class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-slate-300 focus:outline-none focus:border-amber-500">
-                                <option>Commercial Construction</option>
-                                <option>Residential Home Build</option>
-                                <option>Renovation/Remodeling</option>
-                                <option>Other / General Inquiry</option>
+                            <label class="block text-slate-300 text-sm font-semibold mb-1">Project Province</label>
+                            <select name="province" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-slate-300 focus:outline-none focus:border-amber-500">
+                                <option>Gauteng</option>
+                                <option>Western Cape</option>
+                                <option>KwaZulu-Natal</option>
+                                <option>Eastern Cape</option>
+                                <option>Other / Major Civil</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-slate-300 text-sm font-semibold mb-1">Brief Project Overview</label>
-                            <textarea rows="4" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-white focus:outline-none focus:border-amber-500" placeholder="Tell us about the project specifications..." required></textarea>
+                            <textarea name="message" rows="4" class="w-full bg-slate-800 border border-slate-700 rounded p-2.5 text-white focus:outline-none focus:border-amber-500" placeholder="Briefly describe the site and scope..." required></textarea>
                         </div>
                         <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 px-4 rounded transition">
                             Submit Request
@@ -239,12 +250,11 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-900">
         <div class="container mx-auto px-6 text-center text-sm">
-            <p>&copy; 2026 Apex Builders Inc. All Rights Reserved. Safety Compliant and fully licensed.</p>
+            <p>&copy; 2026 SA Builders Guild. All Rights Reserved. OHSAS compliant, CIBD registered, SABS adherence.</p>
         </div>
     </footer>
+
 </body>
 </html>
-  Initial commit for construction site
